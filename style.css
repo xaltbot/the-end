@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0f0f0f;
+    display: none;
+}
+
+body .text {
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 0px 50px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 13px;
+    z-index: 99999;
+    background-color: rgba(0,0,0,.5);
+}
+
+body .text a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff3f15;
+    width: 90px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solarsystem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    /** transform: translateY(50px); **/
+    box-sizing: border-box;
+}
+.sun {
+    width: 125px;
+    height: 125px;
+    background-image: url('sun.gif');
+    background-position: center;
+    background-size: cover;
+    /* background-color: rgba(255, 200, 48, 0.8);*/
+    border-radius: 50%;
+    position: absolute;
+    background-color: transparent;
+}
+.axis1 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-right: 1px solid white;
+    border-radius: 50%;
+    animation: rotasi 5s linear infinite;
+    background-color: transparent;
+}
+
+.axis1 .earth {
+    width: 50px;
+    height: 50px;
+    background-image: url('earth.gif');
+    background-position: center;
+    background-size: cover;
+    /*background-color: #baff80;*/
+    border-radius: 50%;
+    position: absolute;
+    right: 100px;
+    bottom: -20px;
+    animation: rotasi 5s linear infinite;
+    background-color: transparent;
+}
+
+@keyframes rotasi {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.axis2 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-left: 1px solid white;
+    border-radius: 50%;
+    animation: rotasi 5s linear infinite;
+    top: 210px;
+    left: 90px;
+    background-color: transparent;
+}
+
+.axis2 .moon {
+    width: 10px;
+    height: 10px;
+    background-image: url('moon.jpeg');
+    background-position: center;
+    background-size: cover;
+    /*background-color: #ebebeb;*/
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    bottom: 65px;
+    background-color: transparent;
+}

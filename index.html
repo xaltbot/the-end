@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Solar System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="text">
+        <p>Untuk seorang Matahari yang sudah lama ku kenal, yang cahayanya masih bisa kurasakan sampai sekarang, terimakasih telah berpengaruh di hidup ku, walau kita udh pisah mungkin karna kesalahpahaman, tapi aku harap suatu saat aku tetap bisa berpengaruh dalam hidupmu, aku gak minta kamu balik ke janji itu lagi kok, masa lalu gk boleh diubah, jadi kalo kamu butuh bantuan entah itu support, perspektif atau bantuan lain kamu bisa chat Ig ku yaa, aku akan bantu kamu sebagai teman ^^, aku mau bantu karna itu adalah janji ku!. btw aku juga punya hadiah buat kamu yang baru aku selesaikan, maaf ya kalo jelek itu karna aku ngejar waktu, tpi tolong lihat yaa karna aku begadang ngerjainnya ^^</p>
+        <p></p>
+        <a href="halaman2.html">Lihat hadiah</a>
+    </div>
+    <div class="solarsystem">
+    <div class="sun"></div>
+    <div class="axis1">
+        <div class="earth"></div>
+        <div class="axis2">
+            <div class="moon"></div>
+        </div>
+    </div>
+    </div>
+    <script>
+        const PASS_BENAR = "Safira Aulia Maharani";
+
+        function cekAkses() {
+            if (sessionStorage.getItem("authenticated") === "true") {
+                document.body.style.display = "block";
+            } else {
+                let input = prompt("Masukkan nama lengkap untuk mengakses situs:");
+                
+                if (input === PASS_BENAR) {
+                    sessionStorage.setItem("authenticated", "true");
+                    document.body.style.display = "block";
+                } else {
+                    alert("Password Salah!");
+                    window.location.reload(); 
+                }
+            }
+        }
+        cekAkses();
+    </script>
+</body>
+</html>

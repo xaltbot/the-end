@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('hal2Bg.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 500px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+}
+
+.container .header {
+    width: 100%;
+    height: auto;
+}
+
+.container .header span {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.container .hadiah {
+    width: 100%;
+    height: 380px;
+}
+
+.hadiah .gambar {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+.hadiah .gambar img {
+    width: 240px;
+}
+
+.container a:last-child {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 8px;
+}
