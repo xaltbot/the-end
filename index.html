@@ -22,13 +22,13 @@
     </div>
     </div>
     <script>
-        const PASS_BENAR = "Safira Aulia Maharani";
+        const PASS_BENAR = "James Moriarity";
 
         function cekAkses() {
             if (sessionStorage.getItem("authenticated") === "true") {
                 document.body.style.display = "block";
             } else {
-                let input = prompt("Masukkan nama lengkap untuk mengakses situs:");
+                let input = prompt("Masukkan nama rival character favorite anda");
                 
                 if (input === PASS_BENAR) {
                     sessionStorage.setItem("authenticated", "true");
